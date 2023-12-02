@@ -1,7 +1,7 @@
 import "./style.css";
 import Tower from "./assets/abc.png";
 import printMe from "./logger.js";
-import React, { createElement, useState } from "react";
+import { createElement, useState } from "react";
 import * as ReactDOM from "react-dom/client";
 import { Nav } from "./components/Navbar.jsx";
 
@@ -21,7 +21,7 @@ const Counter = () => {
         },
       },
       `this is p tag as a child component and this is rendering value of counter which is coming from parent ${counter}.
-      Click here to increment counter.`
+      Click here to increment counter.`,
     ),
   ]);
 };
