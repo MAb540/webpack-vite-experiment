@@ -5,6 +5,12 @@ import { createElement, useState } from "react";
 import * as ReactDOM from "react-dom/client";
 import { Nav } from "./components/Navbar.jsx";
 
+const v_name = import.meta.env.VITE_NAME;
+console.log("v_name: ", v_name);
+
+const value_of_meta = import.meta.env.VITE_VALUE_OF_META;
+console.log("value_of_meta: ", value_of_meta);
+
 const root = document.getElementById("root");
 const Counter = () => {
   const [counter, setCounter] = useState(0);
@@ -21,7 +27,7 @@ const Counter = () => {
         },
       },
       `this is p tag as a child component and this is rendering value of counter which is coming from parent ${counter}.
-      Click here to increment counter.`,
+      Click here to increment counter.`
     ),
   ]);
 };
